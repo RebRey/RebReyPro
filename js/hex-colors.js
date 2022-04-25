@@ -27,7 +27,7 @@ function changeHexColor() {
       hexcode += hex_numbers[random_index];
     }
     document.getElementById("hex-code").innerHTML = hexcode;
-    document.getElementsByClassName("solid-demo")[0].style.background =
+    document.getElementsByClassName("solid-demo-area")[0].style.background =
       "#" + hexcode;
   }
 
@@ -45,7 +45,7 @@ function changeHexColor() {
         hexcode2 += hex_numbers[random_index];
     }
   
-    document.getElementsByClassName("gradient-demo")[0].style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
+    document.getElementsByClassName("gradient-demo-area")[0].style.background = `linear-gradient(to right, #${hexcode1}, #${hexcode2})`;
     document.querySelector("#hexcode1").textContent = hexcode1;
     document.querySelector("#hexcode2").textContent = hexcode2;
   });

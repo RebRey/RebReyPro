@@ -13,38 +13,32 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <title>Hex Colors</title>
   </head>
   <body>
-    <h1>Hex Colors</h1>
     <section>
-      <h2 class="directions">Click the buttons to generate a random hex color.</h2>
-      <div class="solid-div">
-        <h2>Solid</h2>
-        <div class="solid-demo">
-          <h2>
+      <h1>Hex Colors</h1>
+      <div class="description">
+        <h2 class="demo-version">Solid</h2>
+        <div class="demo-area solid-demo-area">
+          <h3 class="demo-text">
             The hex code of the color is #<span id="hex-code">00000</span>.
-          </h2>
+          </h3>
 
-          <button class="solid-btn" onclick="changeHexColor()">
-            Click Me
-          </button>
+          <button onclick="changeHexColor()">Click Me</button>
         </div>
       </div>
-    </section>
 
-    <section>
-      <div class="gradient-div">
-        <h2>Gradient</h2>
-        <div class="container">
-          <div class="gradient-demo" id="hex-colors">
-            <h2>
-              Linear-gradient hex codes (left to right): #<span id="hexcode1"
-                >ffffff</span
-              >, #<span id="hexcode2">ffffff</span>.
-            </h2>
-            <button id="submit" class="gradient-btn">Click Me</button>
-          </div>
+      <div class="description">
+        <h2 class="demo-version">Linear Gradient</h2>
+        <div class="demo-area gradient-demo-area" id="hex-colors">
+          <h3 class="demo-text">
+            Linear-gradient hex codes (left to right): #<span id="hexcode1"
+              >ffffff</span
+            >, #<span id="hexcode2">ffffff</span>.
+          </h3>
+          <button id="submit" class="gradient-btn">Click Me</button>
         </div>
       </div>
     </section>
