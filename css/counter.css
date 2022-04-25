@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: rgb(49, 6, 69);
+  background: radial-gradient(
+    circle,
+    rgba(49, 6, 69, 1) 0%,
+    rgba(99, 25, 134, 1) 63%,
+    rgba(149, 43, 175, 1) 100%
+  );
+}
+
+.demo-area {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  min-height: 200px;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  background: yellow;
+  border: 5px groove black;
+  border-radius: 5px;
+  color: #bbb;
+}
+
+.counter h1 {
+  color: #000;
+  font-size: 2rem;
+}
+
+#count {
+  font-size: 4rem;
+}
+
+#buttons {
+  display: inline-block;
+}
+
+button {
+  padding: 5px;
+  border: 5px solid black;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+}
+.increase-btn:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.decrease-btn:hover {
+  background-color: red;
+  color: black;
+}
+
+.reset-btn:hover {
+  background-color: cyan;
+  color: black;
+}
+
+@media (min-width: 480px) {
+  #count {
+    font-size: 9rem;
+  }
+  button {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .counter h1 {
+    color: #000;
+    font-size: 3rem;
+  }
+}
