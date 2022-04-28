@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/even-numbers.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/10b92154bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Even or Odd</title>
+  </head>
+  <body>
+    <main>
+      <h1>Even and Odd Number Calculators</h1>
+      <p>
+        Knowing if a number is odd or even is very easy. You just have to divide the number by
+        two.</p>
+        <p>Even Numbers: A number which is divisible by 2 and generates a remainder of 0. The answer will be a whole number.
+        </p>
+        <p>Odd Numbers: A number which is not divisible by 2 and always generates a remainder of 1. The answer will be a decimal.</p>
+
+      </p>
+      <div class="main-container">
+        <div class="even-num-container">
+          <h3>Find the Even Numbers</h3>
+          <div class="input-section">
+            <p>
+              Start:
+              <input type="number" min="0" id="even-min-value" value="1" /> End:
+              <input type="number" id="even-max-value" min="1" value="20" />
+            </p>
+          </div>
+          <div class="button-section">
+            <button id="print-even-nums">Calculate</button>
+            <button id="reset-even-nums">Reset</button>
+          </div>
+          <div id="even-result"></div>
+        </div>
+        <div class="odd-num-container">
+          <h3>Find the Odd Numbers</h3>
+          <div class="input-section">
+            <p>
+              Start:
+              <input type="number" min="0" id="odd-min-value" value="1" /> End:
+              <input type="number" id="odd-max-value" min="1" value="20" />
+            </p>
+          </div>
+          <div class="button-section">
+            <button id="print-odd-nums">Calculate</button>
+            <button id="reset-odd-nums">Reset</button>
+          </div>
+          <div id="odd-result"></div>
+        </div>
+        <div class="even-odd-num-container">
+          <h3>Is it Even or Odd?</h3>
+          <div class="input-section">
+            <p>
+              Enter the Number:
+              <input
+                type="number"
+                min="0"
+                id="even-or-odd-user-input"
+                value="1"
+              />
+            </p>
+          </div>
+          <div class="button-section">
+            <button id="print-odd-or-even">Check</button>
+            <button id="reset-even-odd-nums">Reset</button>
+          </div>
+
+          <div id="even-odd-result"></div>
+        </div>
+      </div>
+    </main>
+    <script src="js/even-numbers.js"></script>
+  </body>
+</html>

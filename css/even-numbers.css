@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 1rem;
+  border-bottom: 2px solid darkblue;
+}
+
+input {
+  width: 40px;
+  padding: 3px;
+  margin: 10px 0 10px 0;
+}
+
+button {
+  border: 2px solid;
+  margin: 0 10px 10px 0px;
+  width: 90px;
+  font-size: 1rem;
+  padding: 3px;
+  border-radius: 20px 20px;
+}
+
+.main-container {
+  border: 2px solid red;
+  width: 100wv;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.even-num-container {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.odd-num-container {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: lightblue;
+}
+
+.even-odd-num-container {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 90%;
+  padding: 5px;
+  background-color: lightsteelblue;
+}
+
+#even-result {
+line-height: 1.5;
+}
+
+#odd-result {
+    line-height: 1.5;
+}
+
+#even-odd-result {
+    line-height: 1.5;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    margin: 50px;
+  }
+
+  .main-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .even-num-container {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .odd-num-container {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .even-odd-num-container {
+    width: 300px;
+    margin: 20px;
+  }
+}
