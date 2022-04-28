@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,138 +12,140 @@ h1 {
   font-size: 2rem;
   font-family: "Dancing Script", cursive;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
 }
 
 .container {
-  width: 100vw;
   height: 100vh;
+}
+
+.input-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap; /* wraps the input fields making it responsive*/
+  justify-content: center; /* centers the input fields on the horizontal axis */
+  align-items: center; /* centers the buttons on the vertical axis */
+  width: 100vw;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* centers the buttons on the horizontal axis */
+  align-items: center; /* centers the buttons on the vertical axis */
   flex-direction: column;
 }
 
-.content {
-  width: 90%;
+.output-container {
+  margin-top: 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.input-area {
-  width: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center; /* centers the output on the horizontal axis */
+  align-items: center; /* centers the output on the vertical axis */
+  flex-direction: column; /* arranges the output text in a column */
+  height: 30vh;
+  background-image: url(../images/love-calculator-background-transparent1.png); /* Location of the image */
+  background-position: center; /* Background image is centered vertically and horizontally at all times */
+  background-repeat: no-repeat; /* Background image doesn’t tile */
+  background-size: contain; /* This is what makes the background image rescale based on the container’s size */
 }
 
 input {
-  height: 10px;
-  width: 200px;
-  padding: 10px;
-  font-size: 0.8rem;
+  margin: 0 40px 10px;
   text-align: center;
-  border-radius: 30px 30px;
-  margin: 0 5px 15px 5px;
-}
-
-.button-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: #d7385c;
-  border: 2px solid #d7385c;
-  padding: 10px;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: bold;
-  border-radius: 30px 30px;
-  height: 10px;
-  width: 165px;
-  margin-bottom: 5px;
-}
-
-a:hover {
-  background-color: #ffecf2;
-  color: black;
-}
-
-.output-area {
-  margin: 10px 0 10px 0;
-  width: 90%;
-  height: 130px;
-  text-align: center;
+  border-radius: 30px;
   font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 200px;
+  height: 30px;
+  border: none;
 }
 
-p {
-  margin: 10px;
+button {
+  margin: 10px 10px 5px 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+  width: 170px;
+  height: 30px;
+  border: none;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 0.7) 63%,
+    rgba(255, 0, 0, 0.5) 100%
+  );
+}
+
+#reset-btn {
+  width: 110px;
+  background: rgb(0, 144, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 144, 255, 0.5) 0%,
+    rgba(0, 144, 255, 0.7) 63%,
+    rgba(0, 144, 255, 1) 100%
+  );
+}
+
+button:hover {
+  color: black;
+  font-weight: 900;
+}
+
+#print {
+  text-align: center;
+  margin: 10px 0px 10px 0;
+  font-size: 1rem;
+  margin: 10px 0px 10px 0;
+  font-weight: 600;
 }
 
 #statement {
   text-transform: uppercase;
-  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(125, 14, 173);
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: 10px 0px 10px 0;
 }
 
-@media (min-width: 640px) {
-  .container {
-    background-image: url(../images/love-calculator-background.png); /* Location of the image */
-    background-position: center; /* Background image is centered vertically and horizontally at all times */
-    background-repeat: no-repeat; /* Background image doesn’t tile */
-    background-size: contain; /* This is what makes the background image rescale based on the container’s size */
-  }
+@media (min-width: 480px) {
   h1 {
     font-size: 6rem;
-    margin: 20px 0 20px;
   }
 
   input {
-    height: 20px;
-    width: 250px;
-    padding: 10px;
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 30px 30px;
-    margin: 20px;
+    height: 60px;
+    width: 300px;
+    font-size: 1.5rem;
+    margin: 30px;
   }
 
-  a {
-    font-size: 1rem;
-    height: 20px;
+  button {
+    height: 60px;
+    width: 300px;
+    font-size: 1.5rem;
+    margin: 30px 30px 10px 30px;
+  }
+
+  #reset-btn {
+    width: 170px;
+  }
+
+  .output-container {
+    height: 45vh;
     margin: 15px;
-    justify-content: flex-end;
   }
 
-  .content {
-    width: 90%;
-  }
-
-  p {
-    font-size: 1.3rem;
+  #print {
+    font-size: 1.5rem;
+    width: 30vw;
   }
 
   #statement {
-    font-size: 1.7rem;
-    color: gold;
-  }
-
-  .input-area {
-    align-items: center;
-    flex-direction: row;
+    font-size: 2.5rem;
+    width: 20vw;
   }
 }

@@ -3,9 +3,11 @@ function love() {
   var name2 = document.getElementById("NameTwo").value;
   if (name1.length <= 0) {
     alert("Please enter your name!");
+    return;
   }
   if (name2.length <= 0) {
-    alert("Please your crush's name!");
+    alert("Please enter your crush's name!");
+    return;
   } else {
     var random = Math.floor(Math.random() * 100);
     document.getElementById("print").innerHTML =
@@ -24,6 +26,13 @@ function love() {
   }
 }
 //Event Listener
-document.querySelector("#calculateLoveBtn").addEventListener("click", () => {
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
   love();
+});
+
+//Reset Statement Event Listener
+document.querySelector("form").addEventListener("reset", () => {
+  document.getElementById("print").innerHTML = "";
+  document.getElementById("statement").innerHTML = "";
 });

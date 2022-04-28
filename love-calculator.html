@@ -25,31 +25,36 @@
     <main>
       <div class="container">
         <h1>Love Calculator</h1>
-        <div class="content">
-          <div class="input-area">
-            <form autocomplete="off">
+        <form autocomplete="off" class="content">
+          <div class="input-container">
               <input
                 type="text"
                 placeholder="Your Name"
                 id="NameOne"
                 onfocus="this.value = ''"
               />
-            </form>
-            <form autocomplete="off">
               <input
                 type="text"
                 placeholder="Your Crush"
                 id="NameTwo"
                 onfocus="this.value = ''"
               />
-            </form>
           </div>
-          <a href="#" id="calculateLoveBtn">❤️ Calculate Love ❤️</a>
-          <div class="output-area">
+          <div class="button-container">
+            <button id="calculateLoveBtn">
+              <i class="fa-solid fa-heart"></i> Calculate Love
+              <i class="fa-solid fa-heart"></i>
+            </button>
+            <button type="reset" id="reset-btn">
+              <i class="fa-solid fa-heart-crack"></i> Reset
+              <i class="fa-solid fa-heart-crack"></i>
+            </button>
+          </div>
+          <div class="output-container">
             <p id="print"></p>
             <p id="statement"></p>
           </div>
-        </div>
+        </form>
       </div>
     </main>
     <script src="js/love-calculator.js"></script>
