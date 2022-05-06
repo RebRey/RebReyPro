@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+p{
+    font-size: 1.125rem;
+}
+
+.fibonacci-container{
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 5px;
+}
