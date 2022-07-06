@@ -8,6 +8,9 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 
     // call makeSound, passing in buttonInnerHTML 
     makeSound(buttonInnerHTML);
+
+    // call the buttonAnimation function and pass it buttonInnerHTML
+    buttonAnimation(buttonInnerHTML);
   });
 }
 
@@ -22,6 +25,9 @@ document.addEventListener("keydown", function(event){
   // We can pass functions as parameters and have functions as callbacks which include
   // things that we get back after the event has happened
   makeSound(event.key)
+
+  // Call the buttonAnimation and pass in event.key
+  buttonAnimation(event.key);
 });
 
 // Create a new function called makeSound and its going to take a single parameter
@@ -66,4 +72,21 @@ function makeSound(key){
         break;
       default: console.log(buttonInnerHTML);
     }
+}
+
+//Adding animation (make sure to call it when a button is clicked or pressed)
+// When using query selector you need to use the dot then the name of the class, just the same as in CSS
+// In CSS file there is a class called pressed (.pressed)
+// .pressed has a box shadow and a transparency
+// add a class to an element using javascript
+// add the pressed class to the activeButton
+function buttonAnimation(currentKey){
+  var activeButton = document.querySelector("." + currentKey)
+  activeButton.classList.add("pressed");
+
+  // add a delay using the setTimeout() method by removing the class
+  //pressed
+  setTimeout(function(){
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
